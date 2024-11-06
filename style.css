@@ -1,0 +1,22 @@
+.logo{
+background-color: #aa8164;
+}
+.logo img{
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+.container-fluid{
+    display: flex;
+    margin-left: 40%;
+    width: 40px;
+    height: 40px;
+
+}
+.nav-link{
+    font-size: 10px;
+    font
+}
