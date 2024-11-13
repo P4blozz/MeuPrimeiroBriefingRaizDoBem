@@ -2,7 +2,7 @@
     width: auto ;
     height: 30px; */
 .logo {
-  background-color: #aa8164;
+  background-color: #6aaa64;
   width: auto;
   height: 80px;
 }
@@ -60,51 +60,235 @@ button {
     padding: 40px;
     background-color: #ffffff; /* Cor do fundo dos itens */
 }
-/* CARROSEL CARDS */
-* {
-  /* margin: 0;
-  padding: 0; */
-}
-.card {
-  background-color: #fff;
-  width: 180px;
-  height: 260px;
-  border-radius: 12px;
-  box-shadow: 4px 4px 12px #aaaa;
-}
-.card img {
-  width: 100%;
-  height: 130px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-.card div {
+
+/* Rodapé */
+/* Ajuste de Altura da Página */
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.carousel-container, .footer {
+  margin-top: auto; /* Força o rodapé para o final da página */
+}
+
+/* Estilo do Rodapé */
+.footer {
+  background-color: #6aaa64;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 4px;
-  height: 50%;
+  gap: 20px;
 }
-.card h1 {
-  font-size: 1.2rem;
+
+.footer-links li {
+  font-size: 14px;
 }
-.card h2 {
-  font-size: .9rem;
-  color: #aaaa;
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
 }
-.card button {
-  background-color: #2192FF;
-  height: 30px;
-  border: none;
-  padding: 4px;
-  width: 80%;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 4px;
+
+.footer-links a:hover {
+  color: #2192FF;
 }
-.card button:hover {
-  background-color: #137de8;
+
+.footer-social a {
+  margin: 0 10px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* Ícones brancos */
+  transition: filter 0.3s;
+}
+
+.footer-social a:hover img {
+  filter: brightness(0.8) invert(1);
+}
+
+.footer-copyright {
+  font-size: 12px;
+  margin-top: 15px;
+}
+/* CARROSEL CARDS */
+.card-wrapper {
+  max-width: 1000VH;
+  margin: 0 0px 35px;
+  padding: 20px 100px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  user-select: none;
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card-list .card-item .card-link {
+  border-color: #00cc22;
+}
+
+/* Image styling */
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Badge styling */
+.card-list .card-link .badge {
+  color: #0eaa00;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: #DDE4FF;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .badge.alfa {
+  color: #B22485;
+  background: #F7DFF5;
+}
+
+.card-list .card-link .badge.beta {
+  color: #B25A2B;
+  background: #FFE3D2;
+}
+
+.card-list .card-link .badge.gama {
+  color: #205C20;
+  background: #D6F3D6;
+}
+
+.card-list .card-link .badge.delta {
+  color: #856404;
+  background: #fff3cd;
+}
+
+/* Title styling */
+.card-list .card-link .card-title {
+  font-size: 1.2rem; /* Set a flexible font size */
+  color: #000;
+  font-weight: 600;
+}
+
+/* Button styling */
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #13bb13;
+  border-radius: 50%;
+  margin: 100px 0 5px;
+  background: none;
   cursor: pointer;
+  border: 2px solid #119600;
+  transform: rotate(-45deg);
+  transition: 0.4s ease; /* Smooth button hover effect */
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: #006e06;
+}
+
+/* Card hover effect */
+.card-list .card-link:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices (mobile-first approach) */
+@media (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 30px 20px;
+  }
+
+  .card-list .card-item .card-link {
+    padding: 15px;
+  }
+
+  .card-list .card-item .card-title {
+    font-size: 1rem; /* Smaller title for smaller screens */
+  }
+
+  .card-list .card-link .badge {
+    font-size: 0.9rem; /* Smaller badge for small screens */
+  }
+}
+
+/* For very small devices (phones in portrait mode) */
+@media (max-width: 480px) {
+  .card-wrapper {
+    margin: 0 15px;
+  }
+
+  .card-list .card-item .card-link {
+    padding: 12px;
+  }
+
+  .card-list .card-item .card-title {
+    font-size: 0.9rem; /* Further reduce title size */
+  }
+
+  .card-list .card-link .badge {
+    font-size: 0.85rem; /* Smaller badge text */
+  }
+
+  .card-list .card-button {
+    height: 30px;
+    width: 30px; /* Smaller button size */
+  }
+}
+/* Botão NEXT */
+
+.swiper-button-next{
+  color: #00cc22;
+}
+.swiper-button-prev{
+  color:#00cc22
 }
