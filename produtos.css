@@ -28,3 +28,9 @@
   font-size: 25px;
   text-transform: uppercase;
 }
+.card-title{
+text-align: center;
+}
+.card-price{
+  text-align: center;
+}
