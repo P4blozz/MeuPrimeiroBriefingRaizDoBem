@@ -320,3 +320,11 @@ html {
     transform: translateX(-100%);
   }
 }
+/* IMAGENS */
+
+.float-start {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
