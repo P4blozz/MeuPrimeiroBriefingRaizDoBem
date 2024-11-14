@@ -292,3 +292,27 @@ body, html {
 .swiper-button-prev{
   color:#00cc22
 }
+
+/*TEXTO ANIMADO*/
+.texto-animado {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .texto-animado p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: loopTexto 20s linear infinite;
+    font-size: 4.5rem; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #eeb752; /* Ajuste a cor do texto */
+  }
+  
+  @keyframes loopTexto {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
