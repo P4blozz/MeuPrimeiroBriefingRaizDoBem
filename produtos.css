@@ -28,9 +28,44 @@
   font-size: 25px;
   text-transform: uppercase;
 }
+.card{
+  border: none;
+}
 .card-title{
 text-align: center;
 }
+.card-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  text-align: center;
+}
 .card-price{
   text-align: center;
+}
+.card-img-top{
+  filter: drop-shadow(0px 0px 12px grey);
+}
+.card-price{
+  padding: 10px;
+  border: 1px  black;
+  background-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  margin: 0 30px 0;
+}
+.botao-modal{
+align-items: center;
+align-content: center;
+width: 0;
+}
+.btn{
+  border-radius: 0;
+  width: 324px;
+}
+.modal-footer .btn{
+  border-radius: 1px;
+  width: auto;
+  height: 38px;
 }
