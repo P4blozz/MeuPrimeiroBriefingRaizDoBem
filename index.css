@@ -411,3 +411,15 @@ width: 0;
   width: auto;
   height: 38px;
 }
+/* CARRINHO */
+.cart-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.cart-icon img {
+  width: 30px;
+  height: 30px;
+}
+
