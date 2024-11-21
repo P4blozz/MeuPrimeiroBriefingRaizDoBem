@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +24,8 @@
   <!-- NAV BAR -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -58,14 +60,17 @@
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
       data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
       data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
+
+  <!-- DESTAQUE -->
+  <div class="destaque">
+    <h1 class="display-4">Display 4</h1>
   </div>
 
   <!-- CARROSSEL SWIPER DE ITENS MÚLTIPLOS -->
@@ -126,54 +131,564 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    <!-- IMAGENS ABAIXO -->
-<div>
-  <img src="images/a1.png" class="rounded float-start" alt="a1">
-  <img src="images/a2.png" class="rounded float-end" alt="a2">
-</div>
-    
-<!-- DESTAQUE -->
-<div class="destaque">
-  <p>
-    Produtos em Destaque
-  </p>
-</div>
-
-<!-- CARDS PRODUTOS -->
-<main>
+  </div>
+  <!-- IMAGENS ABAIXO -->
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col mb-4">
-        <div class="card h-100">
-          <img src="images/Card1.png" class="card-img-top" alt="produto">
-          <div class="card-body">
-            <h5 class="card-title">SkinCeuticals C E Ferulic (1 fl. oz.)</h5>
-            <p class="card-text">A vitamin C serum that provides environmental protection, lightens lines, firms skin
-              and brightens your complexion.</p>
+    <img src="images/a1.png" class="rounded float-start" alt="a1">
+    <img src="images/a2.png" class="rounded float-end" alt="a2">
+  </div>
 
-            <!-- Button trigger modal -->
-            <div class="botao-modal">
-              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Comprar
-              </button>
+  <!-- DESTAQUE -->
+  <div class="destaque">
+    <h1 class="display-4">Display 4</h1>
+  </div>
+
+  <!-- CARDS PRODUTOS -->
+  <main>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="images/Card1.png" class="card-img-top" alt="produto">
+            <div class="card-body">
+              <h5 class="card-title">SkinCeuticals C E Ferulic (1 fl. oz.)</h5>
+              <p class="card-text">A vitamin C serum that provides environmental protection, lightens lines, firms skin
+                and brightens your complexion.</p>
+
+              <!-- Button trigger modal -->
+              <div class="botao-modal">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Comprar
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar rápida</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/Card1.png" alt="SkinCeuticals" width="100%">
+                      <p>SkinCeuticals C E Ferulic (1 fl. oz.)</p>
+                      <p>$69.00</p>
+                      <div class="accordion" id="accordionExample">
+                        <div>
+                        
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Visão geral do produto
+                            </button>
+                         
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">O CE Ferulic da SkinCeuticals apresenta uma combinação antioxidante sinérgica de ácido
+                              ferúlico e vitamina C e E puras para aumentar a proteção da sua pele contra danos
+                              ambientais causados ​​por radicais livres. Além dos benefícios de proteção antioxidante,
+                              esta fórmula melhora os sinais de envelhecimento e fotodanos para reduzir a aparência de
+                              linhas e rugas enquanto firma e ilumina sua pele. Por fim, esta fórmula poderosa ajuda a
+                              neutralizar os radicais livres induzidos por UVA/UVB, radiação infravermelha (IRA) e
+                              poluição de ozônio (O3).
+
+                              Principais benefícios:
+
+                              Oferece proteção ambiental avançada contra radicais livres nocivos à pele causados ​​pelo
+                              sol e pela poluição
+                              Clinicamente comprovado que reduz os danos oxidativos combinados dos radicais livres
+                              gerados por UV, ozônio e exaustão de diesel em até 41%
+                              Melhora a aparência de linhas finas, rugas e perda de firmeza
+                              Uniformiza e ilumina o tom da pele
+                              Uma vez absorvido, este soro de vitamina C pode permanecer eficaz por 72 horas
+                              Sem parabenos e ideal para peles normais, secas e sensíveis
+                              Testado como adequado para uso pós-laser; sempre consulte um médico para cuidados
+                              individuais pós-procedimento
+                              Ingredientes principais:
+
+                              15% de vitamina C pura (ácido L-ascórbico): fornece benefícios antienvelhecimento
+                              visíveis, ilumina a pele e ajuda a proteger contra o estresse oxidativo
+                              1% de vitamina E (alfa tocoferol): esta forma pura de vitamina E neutraliza os radicais
+                              livres e repõe os lipídios da pele
+                              0,5% de ácido ferúlico: um antioxidante de origem vegetal, o ácido ferúlico neutraliza os
+                              radicais livres e aumenta os benefícios antioxidantes e a estabilidade das vitaminas C e E
+                              Observação: o ácido L-ascórbico pode descolorir com o tempo, mas a oxidação é mínima e a
+                              formulação é comprovadamente eficaz. Todas as formulações antioxidantes da SkinCeuticals
+                              foram testadas na embalagem final e foram confirmadas como estáveis ​​e eficazes por 36
+                              meses e até 6 meses após a abertura.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Como usar
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Quando usar:</strong> Manhã
+                              <p><strong> Como aplicar:</strong>Aplique uma vez ao dia pela manhã, após limpar e
+                                tonificar a pele. Aplique de quatro a cinco gotas no rosto, pescoço e peito secos antes
+                                de seus outros produtos antienvelhecimento para a pele.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Destaques
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Volume:</strong>30ml<br>
+                              <strong>Tipo:</strong> Soro<br>
+                              <strong>Tamanho da viagem:</strong> Não<br>
+                              <strong>Fragrância:</strong> Sem fragrância<br>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Tipo de pele e preocupações
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Tipo de pele:</strong> Pele mista, Pele seca, Pele madura, Pele normal, Pele
+                              sensível<br>
+                              <strong>Preocupações com a pele:</strong> Pele envelhecida, Secura e desidratação, Danos
+                              dos radicais
+                              livres, Hiperpigmentação, Danos do sol<br>
+                              <strong>Pele envelhecida:</strong> Linhas finas e rugas, Perda de firmeza<br>
+                              <strong>Área de aplicação:</strong> Decote, Rosto, Pescoço<br>
+                              <strong>Ingrediente:</strong> Vitamina C, Antioxidantes, Ácido hialurônico, Vitamina E<br>
+                              <strong>Preferências:</strong> Limpo, Sem fragrância, Não comedogênico, Sem parabenos, Sem
+                              ftalatos,
+                              Sem sulfato<br>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              Ingredientes
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Aqua/Água/Eau, Etoxidiglicol, Ácido Ascórbico, Glicerina, Propilenoglicol, Laureth-23,
+                              Fenoxietanol, Tocoferol, Trietanolamina, Ácido Ferúlico, Pantenol, Hialuronato de Sódio.
+                              <strong>Para obter as informações mais recentes, é recomendável revisar a lista de
+                                ingredientes impressa na embalagem do produto antes do uso ou consumo.</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              Marca
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Produtos de pele
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              Volume
+                            </button>
+                          </h2>
+                          <div id="collapseSeven" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              1 fl. oz
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-dark"><i class="bi bi-bag"></i> Adicionar ao
+                        carrinho</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="images/Card2.png" class="card-img-top" alt="produto">
+            <div class="card-body">
+              <h5 class="card-title">SkinCeuticals C E Ferulic (1 fl. oz.)</h5>
+              <p class="card-text">A vitamin C serum that provides environmental protection, lightens lines, firms skin
+                and brightens your complexion.</p>
 
+              <!-- Button trigger modal -->
+              <div class="botao-modal">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Comprar
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar rápida</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/Card1.png" alt="SkinCeuticals" width="100%">
+                      <p>SkinCeuticals C E Ferulic (1 fl. oz.)</p>
+                      <p>$69.00</p>
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Visão geral do produto
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              O CE Ferulic da SkinCeuticals apresenta uma combinação antioxidante sinérgica de ácido
+                              ferúlico e vitamina C e E puras para aumentar a proteção da sua pele contra danos
+                              ambientais causados ​​por radicais livres. Além dos benefícios de proteção antioxidante,
+                              esta fórmula melhora os sinais de envelhecimento e fotodanos para reduzir a aparência de
+                              linhas e rugas enquanto firma e ilumina sua pele. Por fim, esta fórmula poderosa ajuda a
+                              neutralizar os radicais livres induzidos por UVA/UVB, radiação infravermelha (IRA) e
+                              poluição de ozônio (O3).
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              Principais benefícios:
+
+                              Oferece proteção ambiental avançada contra radicais livres nocivos à pele causados ​​pelo
+                              sol e pela poluição
+                              Clinicamente comprovado que reduz os danos oxidativos combinados dos radicais livres
+                              gerados por UV, ozônio e exaustão de diesel em até 41%
+                              Melhora a aparência de linhas finas, rugas e perda de firmeza
+                              Uniformiza e ilumina o tom da pele
+                              Uma vez absorvido, este soro de vitamina C pode permanecer eficaz por 72 horas
+                              Sem parabenos e ideal para peles normais, secas e sensíveis
+                              Testado como adequado para uso pós-laser; sempre consulte um médico para cuidados
+                              individuais pós-procedimento
+                              Ingredientes principais:
+
+                              15% de vitamina C pura (ácido L-ascórbico): fornece benefícios antienvelhecimento
+                              visíveis, ilumina a pele e ajuda a proteger contra o estresse oxidativo
+                              1% de vitamina E (alfa tocoferol): esta forma pura de vitamina E neutraliza os radicais
+                              livres e repõe os lipídios da pele
+                              0,5% de ácido ferúlico: um antioxidante de origem vegetal, o ácido ferúlico neutraliza os
+                              radicais livres e aumenta os benefícios antioxidantes e a estabilidade das vitaminas C e E
+                              Observação: o ácido L-ascórbico pode descolorir com o tempo, mas a oxidação é mínima e a
+                              formulação é comprovadamente eficaz. Todas as formulações antioxidantes da SkinCeuticals
+                              foram testadas na embalagem final e foram confirmadas como estáveis ​​e eficazes por 36
+                              meses e até 6 meses após a abertura.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Como usar
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Quando usar:</strong> Manhã
+                              <p><strong> Como aplicar:</strong>Aplique uma vez ao dia pela manhã, após limpar e
+                                tonificar a pele. Aplique de quatro a cinco gotas no rosto, pescoço e peito secos antes
+                                de seus outros produtos antienvelhecimento para a pele.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Destaques
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Volume:</strong>30ml<br>
+                              <strong>Tipo:</strong> Soro<br>
+                              <strong>Tamanho da viagem:</strong> Não<br>
+                              <strong>Fragrância:</strong> Sem fragrância<br>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Tipo de pele e preocupações
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Tipo de pele:</strong> Pele mista, Pele seca, Pele madura, Pele normal, Pele
+                              sensível<br>
+                              <strong>Preocupações com a pele:</strong> Pele envelhecida, Secura e desidratação, Danos
+                              dos radicais
+                              livres, Hiperpigmentação, Danos do sol<br>
+                              <strong>Pele envelhecida:</strong> Linhas finas e rugas, Perda de firmeza<br>
+                              <strong>Área de aplicação:</strong> Decote, Rosto, Pescoço<br>
+                              <strong>Ingrediente:</strong> Vitamina C, Antioxidantes, Ácido hialurônico, Vitamina E<br>
+                              <strong>Preferências:</strong> Limpo, Sem fragrância, Não comedogênico, Sem parabenos, Sem
+                              ftalatos,
+                              Sem sulfato<br>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              Ingredientes
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Aqua/Água/Eau, Etoxidiglicol, Ácido Ascórbico, Glicerina, Propilenoglicol, Laureth-23,
+                              Fenoxietanol, Tocoferol, Trietanolamina, Ácido Ferúlico, Pantenol, Hialuronato de Sódio.
+                              <strong>Para obter as informações mais recentes, é recomendável revisar a lista de
+                                ingredientes impressa na embalagem do produto antes do uso ou consumo.</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              Marca
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Produtos de pele
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              Volume
+                            </button>
+                          </h2>
+                          <div id="collapseSeven" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              1 fl. oz
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-dark"><i class="bi bi-bag"></i> Adicionar ao
+                        carrinho</button>
+                    </div>
                   </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="images/Card3.png" class="card-img-top" alt="produto">
+            <div class="card-body">
+              <h5 class="card-title">SkinCeuticals C E Ferulic (1 fl. oz.)</h5>
+              <p class="card-text">A vitamin C serum that provides environmental protection, lightens lines, firms skin
+                and brightens your complexion.</p>
+
+              <!-- Button trigger modal -->
+              <div class="botao-modal">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Comprar
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar rápida</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/Card1.png" alt="SkinCeuticals" width="100%">
+                      <p>SkinCeuticals C E Ferulic (1 fl. oz.)</p>
+                      <p>$69.00</p>
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Visão geral do produto
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              O CE Ferulic da SkinCeuticals apresenta uma combinação antioxidante sinérgica de ácido
+                              ferúlico e vitamina C e E puras para aumentar a proteção da sua pele contra danos
+                              ambientais causados ​​por radicais livres. Além dos benefícios de proteção antioxidante,
+                              esta fórmula melhora os sinais de envelhecimento e fotodanos para reduzir a aparência de
+                              linhas e rugas enquanto firma e ilumina sua pele. Por fim, esta fórmula poderosa ajuda a
+                              neutralizar os radicais livres induzidos por UVA/UVB, radiação infravermelha (IRA) e
+                              poluição de ozônio (O3).
+
+                              Principais benefícios:
+
+                              Oferece proteção ambiental avançada contra radicais livres nocivos à pele causados ​​pelo
+                              sol e pela poluição
+                              Clinicamente comprovado que reduz os danos oxidativos combinados dos radicais livres
+                              gerados por UV, ozônio e exaustão de diesel em até 41%
+                              Melhora a aparência de linhas finas, rugas e perda de firmeza
+                              Uniformiza e ilumina o tom da pele
+                              Uma vez absorvido, este soro de vitamina C pode permanecer eficaz por 72 horas
+                              Sem parabenos e ideal para peles normais, secas e sensíveis
+                              Testado como adequado para uso pós-laser; sempre consulte um médico para cuidados
+                              individuais pós-procedimento
+                              Ingredientes principais:
+
+                              15% de vitamina C pura (ácido L-ascórbico): fornece benefícios antienvelhecimento
+                              visíveis, ilumina a pele e ajuda a proteger contra o estresse oxidativo
+                              1% de vitamina E (alfa tocoferol): esta forma pura de vitamina E neutraliza os radicais
+                              livres e repõe os lipídios da pele
+                              0,5% de ácido ferúlico: um antioxidante de origem vegetal, o ácido ferúlico neutraliza os
+                              radicais livres e aumenta os benefícios antioxidantes e a estabilidade das vitaminas C e E
+                              Observação: o ácido L-ascórbico pode descolorir com o tempo, mas a oxidação é mínima e a
+                              formulação é comprovadamente eficaz. Todas as formulações antioxidantes da SkinCeuticals
+                              foram testadas na embalagem final e foram confirmadas como estáveis ​​e eficazes por 36
+                              meses e até 6 meses após a abertura.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Como usar
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Quando usar:</strong> Manhã
+                              <p><strong> Como aplicar:</strong>Aplique uma vez ao dia pela manhã, após limpar e
+                                tonificar a pele. Aplique de quatro a cinco gotas no rosto, pescoço e peito secos antes
+                                de seus outros produtos antienvelhecimento para a pele.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Destaques
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Volume:</strong>30ml<br>
+                              <strong>Tipo:</strong> Soro<br>
+                              <strong>Tamanho da viagem:</strong> Não<br>
+                              <strong>Fragrância:</strong> Sem fragrância<br>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Tipo de pele e preocupações
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Tipo de pele:</strong> Pele mista, Pele seca, Pele madura, Pele normal, Pele
+                              sensível<br>
+                              <strong>Preocupações com a pele:</strong> Pele envelhecida, Secura e desidratação, Danos
+                              dos radicais
+                              livres, Hiperpigmentação, Danos do sol<br>
+                              <strong>Pele envelhecida:</strong> Linhas finas e rugas, Perda de firmeza<br>
+                              <strong>Área de aplicação:</strong> Decote, Rosto, Pescoço<br>
+                              <strong>Ingrediente:</strong> Vitamina C, Antioxidantes, Ácido hialurônico, Vitamina E<br>
+                              <strong>Preferências:</strong> Limpo, Sem fragrância, Não comedogênico, Sem parabenos, Sem
+                              ftalatos,
+                              Sem sulfato<br>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              Ingredientes
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Aqua/Água/Eau, Etoxidiglicol, Ácido Ascórbico, Glicerina, Propilenoglicol, Laureth-23,
+                              Fenoxietanol, Tocoferol, Trietanolamina, Ácido Ferúlico, Pantenol, Hialuronato de Sódio.
+                              <strong>Para obter as informações mais recentes, é recomendável revisar a lista de
+                                ingredientes impressa na embalagem do produto antes do uso ou consumo.</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              Marca
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Produtos de pele
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              Volume
+                            </button>
+                          </h2>
+                          <div id="collapseSeven" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              1 fl. oz
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-dark"><i class="bi bi-bag"></i> Adicionar ao
+                        carrinho</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -181,53 +696,28 @@
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card h-100">
-          <img src="images/Card1.png" class="card-img-top" alt="produto">
-          <div class="card-body">
-            <h5 class="card-title">SkinCeuticals C E Ferulic (1 fl. oz.)</h5>
-            <p class="card-text">A vitamin C serum that provides environmental protection, lightens lines, firms skin
-              and brightens your complexion.</p>
-            <h5 class="card-price">Comprar</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card h-100">
-          <img src="images/Card1.png" class="card-img-top" alt="produto">
-          <div class="card-body">
-            <h5 class="card-title">SkinCeuticals C E Ferulic (1 fl. oz.)</h5>
-            <p class="card-text">A vitamin C serum that provides environmental protection, lightens lines, firms skin
-              and brightens your complexion.</p>
-            <h5 class="card-price">Comprar</h5>
-          </div>
-        </div>
-      </div>
     </div>
-</main>
-<!-- INSTAGRAM -->
-<div class="insta">
-  <img src="images/instagram.png" alt="instagram">
-</div>
- 
+  </main>
+  <!-- INSTAGRAM -->
+  <div class="insta">
+    <img src="images/instagram.png" alt="instagram">
+  </div>
 
-
-    <!-- RODAPÉ -->
-    <footer class="footer">
-      <div class="footer-content">
-        <h4>Raiz do Bem</h4>
-        <p>Conectando você com o melhor da natureza.</p>
-        <ul class="footer-links">
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="#termos">Termos de Serviço</a></li>
-          <li><a href="#privacidade">Política de Privacidade</a></li>
-        </ul>
-        <div class="footer-social">
-          <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
-          <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
-          <a href="#"><img src="icons/whatsapp.svg" alt="Whatsapp" /></a>
-        </div>
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h4>Raiz do Bem</h4>
+      <p>Conectando você com o melhor da natureza.</p>
+      <ul class="footer-links">
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#termos">Termos de Serviço</a></li>
+        <li><a href="#privacidade">Política de Privacidade</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="icons/whatsapp.svg" alt="Whatsapp" /></a>
       </div>
     </div>
     <p>&copy; 2024 Raiz do Bem. Todos os direitos reservados.</p>

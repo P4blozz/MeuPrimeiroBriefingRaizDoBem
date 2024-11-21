@@ -40,9 +40,14 @@ body {
 /* CARROSSEL */
 
 .carousel-inner {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 1%;
+  
+}
+.carousel-control-prev, .carousel-control-next{
+  margin: 0px 0px 0px;
+  width: 300px;
 }
 button {
   margin-right: 10%;
@@ -341,12 +346,10 @@ html {
   position: relative;
 }
 /* DESTAQUES */
-.destaque {
+.destaque .display-4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  font-size: 30px;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
+  padding-top: 2%;
 }
 /* VIDEO INSTAGRAM */
 .video controls loop {
@@ -421,4 +424,63 @@ width: 0;
   width: 30px;
   height: 30px;
 }
+/* card footer */
 
+.card{
+  border: none;
+}
+.card-title{
+text-align: center;
+}
+.card-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+.card-price{
+  text-align: center;
+}
+.card-img-top{
+  filter: drop-shadow(0px 0px 12px grey);
+}
+.card-price{
+  padding: 10px;
+  border: 1px  black;
+  background-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  /* margin: 0 30px 0; */
+}
+.botao-modal .btn{
+  align-items: center;
+  width: fit-content!important;
+
+}
+.botao-modal{
+align-items: center;
+align-content: center;
+width: 0;
+}
+.btn{
+  border-radius: 0;
+  width: 100%;
+  
+}
+.modal-footer{
+  align-items: normal;
+}
+.modal-footer .btn{
+  border-radius: 1px;
+  width: 498px;
+  height: 50px;
+}
+/* Formatação modal */
+.accordion{
+  --bs-accordion-border-color:none;
+
+}
+.accordion-button:not(.collapsed){
+  background-color: white;
+}
