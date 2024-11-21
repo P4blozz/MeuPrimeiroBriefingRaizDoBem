@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -128,23 +127,108 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-  </div>
+    <!-- IMAGENS ABAIXO -->
+<div>
+  <img src="images/a1.png" class="rounded float-start" alt="a1">
+  <img src="images/a2.png" class="rounded float-end" alt="a2">
+</div>
+    
+<!-- DESTAQUE -->
+<div class="destaque">
+  <p>
+    Produtos em Destaque
+  </p>
+</div>
 
-  <!-- RODAPÉ -->
-  <footer class="footer">
-    <div class="footer-content">
-      <h4>Raiz do Bem</h4>
-      <p>Conectando você com o melhor da natureza.</p>
-      <ul class="footer-links">
-        <li><a href="#sobre">Sobre Nós</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#termos">Termos de Serviço</a></li>
-        <li><a href="#privacidade">Política de Privacidade</a></li>
-      </ul>
-      <div class="footer-social">
-        <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
-        <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
-        <a href="#"><img src="icons/twitter.svg" alt="Twitter" /></a>
+<!-- CARDS PRODUTOS -->
+<main>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="images/Card1.png" class="card-img-top" alt="produto">
+          <div class="card-body">
+            <h5 class="card-title">SkinCeuticals C E Ferulic (1 fl. oz.)</h5>
+            <p class="card-text">A vitamin C serum that provides environmental protection, lightens lines, firms skin
+              and brightens your complexion.</p>
+
+            <!-- Button trigger modal -->
+            <div class="botao-modal">
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar
+              </button>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="images/Card1.png" class="card-img-top" alt="produto">
+          <div class="card-body">
+            <h5 class="card-title">SkinCeuticals C E Ferulic (1 fl. oz.)</h5>
+            <p class="card-text">A vitamin C serum that provides environmental protection, lightens lines, firms skin
+              and brightens your complexion.</p>
+            <h5 class="card-price">Comprar</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="images/Card1.png" class="card-img-top" alt="produto">
+          <div class="card-body">
+            <h5 class="card-title">SkinCeuticals C E Ferulic (1 fl. oz.)</h5>
+            <p class="card-text">A vitamin C serum that provides environmental protection, lightens lines, firms skin
+              and brightens your complexion.</p>
+            <h5 class="card-price">Comprar</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+<!-- INSTAGRAM -->
+<div class="insta">
+  <img src="images/instagram.png" alt="instagram">
+</div>
+ 
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h4>Raiz do Bem</h4>
+        <p>Conectando você com o melhor da natureza.</p>
+        <ul class="footer-links">
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#termos">Termos de Serviço</a></li>
+          <li><a href="#privacidade">Política de Privacidade</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+          <a href="#"><img src="icons/whatsapp.svg" alt="Whatsapp" /></a>
+        </div>
       </div>
     </div>
     <p>&copy; 2024 Raiz do Bem. Todos os direitos reservados.</p>
@@ -176,5 +260,3 @@
     });
   </script>
 </body>
-
-</html>
