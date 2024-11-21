@@ -40,9 +40,7 @@ body {
 /* CARROSSEL */
 
 .carousel-inner {
-  overflow: hidden;
-  width: 70vw;
-  height: 100%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 1%;
 }
