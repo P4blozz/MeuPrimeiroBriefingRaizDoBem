@@ -55,6 +55,7 @@ button {
 .icons1 img {
   width: 50px;
   height: 50px;
+  background: none;
 }
 .caro {
   width: 50vw;
@@ -236,7 +237,7 @@ html {
   transition: 0.4s ease; /* Smooth button hover effect */
 }
 
-.card-list .card-link:hover .card-button {
+.card-list .card-link:hover .card-button { /* Cor seta interna e externa */
   color: #fff;
   background: #006e06;
 }
