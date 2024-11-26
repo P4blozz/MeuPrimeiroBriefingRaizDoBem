@@ -1,0 +1,51 @@
+/* HEADER NAVBAR */
+
+/* imagem logo */
+.rounded{
+    width: 90px;
+    height: auto;
+}
+/* Alinhar a barra de navegação como um flex container */
+.section-navbar .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Alinhar a logo ao centro */
+.imagem-logo{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Evitar que a pesquisa ultrapasse os limites da tela */
+form.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Ajuste de largura do campo de pesquisa */
+form.d-flex input{
+    max-width: 400px;
+    width: 100%;
+}
+/* Responsividade: navbar para dispositivos móveis */
+@media (max-width: 768px) {
+    .section-navbar .navbar {
+        flex-direction: column; /* Empilha os itens em coluna */
+        justify-content: flex-start; /* Coloca os itens no início da coluna */
+    }
+
+    .imagem-logo {
+        margin-bottom: 10px;
+    }
+
+    /* Para manter a pesquisa com largura adequada */
+    form.d-flex {
+        width: auto;
+        margin-top: 10px;
+    }
+}
+/* pesquisa */
