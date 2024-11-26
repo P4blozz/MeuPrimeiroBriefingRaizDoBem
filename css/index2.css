@@ -2,8 +2,8 @@
 
 /* imagem logo */
 .rounded{
-    width: 90px;
-    height: auto;
+    width: auto;
+    height: 60px;
 }
 /* Alinhar a barra de navegação como um flex container */
 .section-navbar .navbar{
@@ -17,8 +17,9 @@
 .imagem-logo{
     display: flex;
     justify-content: center;
-    margin-left: auto;
+    margin-left: 44%;
     margin-right: auto;
+    
 }
 /* Evitar que a pesquisa ultrapasse os limites da tela */
 form.d-flex{
@@ -48,4 +49,52 @@ form.d-flex input{
         margin-top: 10px;
     }
 }
-/* pesquisa */
+/* ICONES */
+.iconeslc{
+    width: 100px;
+    height: 60px;
+}
+
+/* navlinks */
+.navbarlinks
+{
+    background-color: black;
+    .nav-link{
+        color: white;
+        background-color: black;
+    }
+    
+}
+
+/*TEXTO ANIMADO*/
+.texto-animado {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #6aaa64;
+  }
+  
+  .texto-animado p {
+    display: inline-block;
+    padding-left: 100%;
+    margin-bottom: 1px;
+    animation: loopTexto 30s linear infinite;
+    font-size: 1rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #ffffff;
+  }
+  
+  @keyframes loopTexto {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* MAIN */
+/* carousel */
+  .carousel-inner{
+    margin: 0 auto;
+    margin-top: 1%;
+  }
