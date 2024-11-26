@@ -36,7 +36,11 @@ body {
     margin-top: 25px;
 }
 
-.icon-login{
+.icon-login-title{
     font-size: 5rem;
     color: cadetblue;
+}
+
+.login-icon {
+    font-size: 3rem;
 }
