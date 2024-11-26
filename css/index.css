@@ -8,6 +8,7 @@ body {
   background-attachment: fixed; 
 }
 .logo {
+  display: flex;
   background-color: #6aaa64;
   width: auto;
   height: 80px;
@@ -24,11 +25,26 @@ body {
   margin-left: 36%;
   height: 60px;
 }
+/* NAVBAR */
+/* .navbar-toggler {
+display: flex;
+align-items: flex-start;
+align-content: flex-start;
+}
+.navbar-toggler-icon{
+display: flex;
+align-content: flex-start;
+}
+
+.navbar{
+  display: flex;
+  align-items: start;
+  align-content: start;
+} */
 .navbar-nav {
   gap: 15px;
   vertical-align: auto;
 }
-/* INICIO */
 .navbar-brand {
   font-size: 25px;
   text-transform: uppercase;

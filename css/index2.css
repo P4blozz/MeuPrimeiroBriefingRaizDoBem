@@ -1,0 +1,9 @@
+/* HEADER NAVBAR */
+
+/* imagem logo */
+.text-center{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+/* pesquisa */
