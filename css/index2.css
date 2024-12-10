@@ -1,1 +1,19 @@
 /* NAVBAR */
+.section-navbar{
+  width: max-content;
+}
+
+.section-navbar{
+  & .container{
+    width: max-content;
+    
+  }
+  & .row{
+    width: max-content;
+    
+  }
+  & .col{
+    width: max-content;
+    
+  }
+}
