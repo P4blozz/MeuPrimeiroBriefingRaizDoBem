@@ -2,6 +2,13 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
   /* HEADER NAVBAR */
+.navbar{
+  width: 100%;
+}
+
+.section-navbar{
+  /* width: fit-content; */
+}
 
   /* imagem logo */
   .rounded {
