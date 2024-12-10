@@ -12,8 +12,25 @@
     width: max-content;
     
   }
-  & .col{
+  & .col-6{
     width: max-content;
+    display: inline;
     
+  }
+  & .icones{
+  padding: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+.icones{
+  & .icone-login{
+    width: 20px;
+    height: auto;
+    
+  }
+  & .icone-carrinho{
+    width: 20px;
+    height: auto;
   }
 }
